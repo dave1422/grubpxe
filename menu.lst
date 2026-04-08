@@ -1,0 +1,23 @@
+#
+# Copyright (c) 2026, dave and/or his affiliates. All rights reserved.
+#
+#
+#pragma ident	"@(#)install_menu	1.3	10/09/09 SMI"
+#
+
+default=0
+timeout=60
+min_mem64 1024
+
+# templates:
+# title Example Operating System
+#	kernel$ /opensolaris/platform/i86pc/kernel/unix -B install_media=http://pxe.addr/os_files
+#	module$ /os_files/mod01.zlib
+#	module$ /os_files/mod02.zlib
+
+# example:
+# OpenSolaris with the IP ending in .119:
+title Sun OpenSolaris x86
+	kernel$ /opensolaris/platform/i86pc/kernel/unix -B install_media=http://192.168.119/solaris10
+	module$ /opensolaris/solarismisc.zlib
+	module$ /opensolaris/solaris.zlib
