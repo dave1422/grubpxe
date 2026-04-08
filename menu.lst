@@ -9,13 +9,14 @@ default=0
 timeout=60
 min_mem64 1024
 
-# templates:
+# example:
 # title Example Operating System
-#	kernel$ /opensolaris/platform/i86pc/kernel/unix -B install_media=http://pxe.addr/os_files
+#	kernel$ /os_files/unix -B install_media=http://pxe.addr/os_files # or whatever your OS uses
 #	module$ /os_files/mod01.zlib
 #	module$ /os_files/mod02.zlib
+#   module$ ...
 
-# example:
+# sample:
 # OpenSolaris with the IP ending in .119:
 title Sun OpenSolaris x86
 	kernel$ /opensolaris/platform/i86pc/kernel/unix -B install_media=http://192.168.119/solaris10
