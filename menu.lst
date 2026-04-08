@@ -18,7 +18,24 @@ min_mem64 1024
 
 # sample:
 # OpenSolaris with the IP ending in .119:
-title Sun OpenSolaris x86
-	kernel$ /opensolaris/platform/i86pc/kernel/unix -B install_media=http://192.168.119/solaris10
-	module$ /opensolaris/solarismisc.zlib
-	module$ /opensolaris/solaris.zlib
+# title OpenSolaris x86 (Network Boot)
+#  kernel$ /opensolaris/platform/i86pc/kernel/unix -B install_media=http://192.168.119/solaris10
+#  module$ /opensolaris/solarismisc.zlib
+#  module$ /opensolaris/solaris.zlib
+
+# sample:
+# MINIX 3 with the IP ending in .119:
+title MINIX 3 (Network Boot)
+    kernel$ http://192.168.1.119/minix/KERNEL
+    module$ http://192.168.1.119/minix/MOD01_DS
+    module$ http://192.168.1.119/minix/MOD02_RS
+    module$ http://192.168.1.119/minix/MOD03_PM
+    module$ http://192.168.1.119/minix/MOD04_SCHED
+    module$ http://192.168.1.119/minix/MOD05_VFS
+    module$ http://192.168.1.119/minix/MOD06_MEMORY
+    module$ http://192.168.1.119/minix/MOD07_TTY
+    module$ http://192.168.1.119/minix/MOD08_MFS
+    module$ http://192.168.1.119/minix/MOD09_VM
+    module$ http://192.168.1.119/minix/MOD10_PFS
+    module$ http://192.168.1.119/minix/MOD11_INIT
+
